@@ -4,7 +4,7 @@ import { Observable } from "rxjs";
 
 @Injectable()
 export class DataService {
-  private url: string = "https://api.covid19api.com/summary";
+  private url: string = "data.json";
   constructor(private http: HttpClient) {}
 
   getData(): Observable<any> {

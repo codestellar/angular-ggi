@@ -30,6 +30,7 @@ export class AppComponent {
   getAllData() {
     this.service.getData().subscribe(response => {
       this.summaryData = response;
+      console.log(response);
       this.getIndiaData();
       this.getSortedData();
     });
